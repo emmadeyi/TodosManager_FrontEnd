@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo Templates</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark main-color-bg p-0">
+    <div class="container">
+      <button class="navbar-toggler mr-auto ml-2" type="button" data-toggle="collapse" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand mr-3">Todos</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link ">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="projects.html" class="nav-link active">Projects</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="tasks.html" class="nav-link">Tasks</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3 ml-2">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> Welcome Warez
+            </a>
+            <div class="dropdown-menu p-0 text-light">
+              <a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>Profile</a>
+              <a href="settings.html" class="dropdown-item"><i class="fa fa-gear"></i>Setting</a>
+            </div>
+          </li>
+          <li class="nav-item ml-2">
+            <a href="login.html" class="nav-link"> 
+              <i class="fa fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  
+  
+  <!--HEADER SECTION -->
+  <header id="main-header" class="py-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 text-md-left">
+          <h1>
+            <i class="fa fa-calendar"></i> Projects 
+          </h1>
+          <h3><small class="text-muted">Manage your projects/ tasks</small></h3>
+        </div>
+        <div class="col-md-2">
+          <div class="dropdown">
+            <a href="" class="btn btn-secondary nav-link dropdown-toggle" data-toggle="dropdown">
+              Create Content
+            </a>
+            <div class="dropdown-menu p-0 text-light">
+              <a href="addProject.html" class="dropdown-item"><i class="fa fa-calendar"></i> Add Project</a>
+              <a href="addTask.html" class="dropdown-item"><i class="fa fa-file"></i> Add Task</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="main" class="mt-3 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active main-color-bg">
+              Projects
+            </a>
+            
+            <a href="#" class="list-group-item list-group-item-action disabled"> <i class="fa fa-calendar"></i> Projects
+            <span class="badge badge-pill badge-secondary">3</span>
+            </a>  
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-list-alt"></i> Tasks  
+            <span class="badge badge-pill badge-secondary">20</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-folder-open-o"></i> Pending Task 
+            <span class="badge badge-pill badge-secondary">9</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-archive"></i> Completed Tasks
+            <span class="badge badge-pill badge-secondary">11</span>
+            </a> 
+          </div>
+          <!--Task Status Progress Bar -->
+          <div class="card mt-3 mb-3">
+            <div class="card-body">
+              <h5>Today's Progress <i class="fa fa-bar-chart"></i></h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped main-color-bg" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="card-body">
+                <h5>Overall Progress <i class="fa fa-line-chart"></i></h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!--TODOS Overview -->
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header main-color-bg">
+              <h2><i class="fa fa-calendar"></i> Projects List</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <div id="accordion" role="tablist">
+                    <div class="card card-block">
+                      <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                          <a data-toggle="collapse" class="text-secondary" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="row">
+                                <div class="col-md-6 text-left"><h4>Task Manager App</h4> </div>
+                                <div class="col-md-6 text-right "> <em><small>26 Days Left</small></em> </div>
+                              </div> 
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                            </div>
+                          </a>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="projectDetails.html" class="btn btn-outline-dark mb-3"><i class="fa fa-list"></i> Details</a>
+                          <ul class="list-group">
+                            <li class="list-group-item"> <h6>Application Architecture and Design</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>FrontEnd Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design and Review</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Database Architecture, Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design Implementation/ Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Testing/ Evaluation</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Approval</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Deployment</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                          <a class="collapsed text-secondary" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                            
+                            <div class="row">
+                              <div class="col-md-6 text-left"><h4>Savvy App</h4></div>
+                              <div class="col-md-6 text-right "> <em><small>15 Days Left</small></em> </div>
+                            </div> 
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                            </div>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="projectDetails.html" class="btn btn-outline-dark mb-3"><i class="fa fa-list"></i> Details</a>
+                          <ul class="list-group">
+                            <li class="list-group-item"> <h6>Application Architecture and Design</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>FrontEnd Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design and Review</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Database Architecture, Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design Implementation/ Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Testing/ Evaluation</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Approval</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Deployment</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                          <a class="collapsed text-secondary" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                            
+                            <div class="row">
+                              <div class="col-md-6 text-left"><h4>Inventory Management</h4></div>
+                              <div class="col-md-6 text-right "> <em><small>48 Days Left</small></em> </div>
+                            </div> 
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                            </div>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="projectDetails.html" class="btn btn-outline-dark mb-3"><i class="fa fa-list"></i> Details</a>
+                          <ul class="list-group">
+                            <li class="list-group-item"> <h6>Application Architecture and Design</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>FrontEnd Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design and Review</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Database Architecture, Design and Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>BackEnd Data Flow and Sync Design Implementation/ Development</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Testing/ Evaluation</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Approval</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                            <li class="list-group-item"> <h6>Application Deployment</h6> <div class="progress">
+                              <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

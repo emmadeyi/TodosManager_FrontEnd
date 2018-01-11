@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo Templates</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark main-color-bg p-0">
+    <div class="container">
+      <button class="navbar-toggler mr-auto ml-2" type="button" data-toggle="collapse" data-toggle="collapse" data-target="#navbarNav"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand mr-3">Todos</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="tasks.html" class="nav-link">Tasks</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3 ml-2">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> Welcome Warez
+            </a>
+            <div class="dropdown-menu p-0 text-light">
+              <a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>Profile</a>
+              <a href="settings.html" class="dropdown-item"><i class="fa fa-gear"></i>Setting</a>
+            </div>
+          </li>
+          <li class="nav-item ml-2">
+            <a href="login.html" class="nav-link"> 
+              <i class="fa fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  
+  
+  <!--HEADER SECTION -->
+  <header id="main-header" class="py-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 text-md-left">
+          <h1>
+            <i class="fa fa-file"></i> Add Task 
+          </h1>
+          <h3><small class="text-muted">Create a new project</small></h3>
+        </div>
+        <div class="col-md-2">
+          <div class="dropdown">
+            <a href="" class="btn btn-secondary nav-link dropdown-toggle" data-toggle="dropdown">
+              Create Content
+            </a>
+            <div class="dropdown-menu p-0 text-light">
+              <a href="addProject.html" class="dropdown-item"><i class="fa fa-calendar"></i> Add Project</a>
+              <a href="addTask.html" class="dropdown-item"><i class="fa fa-file"></i> Add Task</a>
+              <a href="addCategory.html" class="dropdown-item"><i class="fa fa-folder-o"></i> Add Category</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+  <section id="main" class="mt-3 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active main-color-bg">
+              Dashboard
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-list-alt"></i> Tasks  
+            <span class="badge badge-pill badge-secondary">20</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-folder-open-o"></i> Pending Task 
+            <span class="badge badge-pill badge-secondary">9</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"><i class="fa fa-archive"></i> Completed Tasks
+            <span class="badge badge-pill badge-secondary">11</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled"> <i class="fa fa-calendar"></i> Projects
+            <span class="badge badge-pill badge-secondary">3</span>
+            </a>  
+            <a href="#" class="list-group-item list-group-item-action disabled"> <i class="fa fa-folder"></i> Categories
+            <span class="badge badge-pill badge-secondary">4</span>
+            </a>  
+          </div>
+          <!--Task Status Progress Bar -->
+          <div class="card mt-3 mb-3">
+            <div class="card-body">
+              <h5>Today's Progress <i class="fa fa-bar-chart"></i></h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped main-color-bg" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="card-body">
+                <h5>Overall Progress <i class="fa fa-line-chart"></i></h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!--Add project form -->
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header main-color-bg">
+              <h4> <i class="fa fa-file-o"></i> New Task</h4>
+            </div>
+            <div class="card-body">
+              <form >
+                <div class="form-group">
+                  <label for="title" class="form-control-label">Task</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="category" class="form-control-label">Category</label>
+                  <select class="form-control">
+                    <option>Web Development</option>
+                    <option>Info Security</option>
+                    <option>Enterprise Networking</option>
+                    <option>Graphic Design</option>
+                    <option>IT Service Outsourcing</option>
+                  </select> 
+                </div>
+                <div class="form-group">
+                    <label for="category" class="form-control-label">Project</label>
+                    <select class="form-control">
+                      <option>Todo Task Manager</option>
+                      <option>-----------------</option>
+                      <option>Self Task</option>
+                    </select> 
+                  </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="title" class="form-control-label">Start Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="title" class="form-control-label">Due Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>    
+                <div class="form-group">
+                  <label for="body">Task Description</label>
+                  <textarea class="form-control" rows="5" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="body">Resources</label>
+                    <textarea class="form-control" rows="5" ></textarea>
+                  </div>
+                <input type="submit" value="Submit" class="btn btn-block main-color-bg"/>
+              </form>         
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

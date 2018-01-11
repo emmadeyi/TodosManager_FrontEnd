@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Admin Area</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark main-color-bg p-0">
+    <div class="container">
+      <button class="navbar-toggler mr-auto ml-2" type="button" data-toggle="collapse" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand mr-3">Todos</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="tasks.html" class="nav-link">Tasks</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3 ml-2">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> Welcome Warez
+            </a>
+            <div class="dropdown-menu p-0 text-light">
+              <a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>Profile</a>
+              <a href="settings.html" class="dropdown-item"><i class="fa fa-gear"></i>Setting</a>
+            </div>
+          </li>
+          <li class="nav-item ml-2">
+            <a href="login.html" class="nav-link"> 
+              <i class="fa fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav><!--HEADER SECTION -->
+  <header id="main-header" class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 text-md-left">
+            <h1>
+              <i class="fa fa-folder"></i> Categories 
+            </h1>
+            <h3><small class="text-muted">Manage your projects/ tasks Categories</small></h3>
+          </div>
+          <div class="col-md-2">
+            <div class="dropdown">
+              <a href="" class="btn btn-secondary nav-link dropdown-toggle" data-toggle="dropdown">
+                Create Content
+              </a>
+              <div class="dropdown-menu p-0 text-light">
+                <a href="addProject.html" class="dropdown-item"><i class="fa fa-calendar"></i> Add Project</a>
+                <a href="addTask.html" class="dropdown-item"><i class="fa fa-file"></i> Add Task</a>
+                <a href="addCategory.html" class="dropdown-item"><i class="fa fa-folder-o"></i> Add Category</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!--Actions -->
+  <section id="actions" class="py-3 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Categories...">
+              <span class="input-group-btn"><button class="btn main-color-bg">Search</button></span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Categories-->
+  <section id="categories" class="mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>Category List</h4>
+            </div>
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>#</th>
+                  <th>Category</th>
+                  <th>Date Created</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+                  <td>Web Development</td>
+                  <td>4th December, 2017</td>
+                  <td>
+                    <a href="#" class="btn btn-light btn-outline-dark"><i class="fa fa-edit"></i> Edit</a> 
+                    <a href="#" class="btn btn-danger btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <td>Info Security</td>
+                  <td>12th August, 2017</td>
+                  <td>
+                    <a href="#" class="btn btn-light btn-outline-dark"><i class="fa fa-edit"></i> Edit</a> 
+                    <a href="#" class="btn btn-danger btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">3</td>
+                  <td>Enterprise Networking</td>
+                  <td>3rd July, 2017</td>
+                  <td>
+                    <a href="#" class="btn btn-light btn-outline-dark"><i class="fa fa-edit"></i> Edit</a> 
+                    <a href="#" class="btn btn-danger btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">4</td>
+                  <td>Graphics Design</td>
+                  <td>24th May, 2017</td>
+                  <td>
+                    <a href="#" class="btn btn-light btn-outline-dark"><i class="fa fa-edit"></i> Edit</a> 
+                    <a href="#" class="btn btn-danger btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">5</td>
+                  <td>IT Service Outsourcing</td>
+                  <td>24th May, 2017</td>
+                  <td>
+                    <a href="#" class="btn btn-light btn-outline-dark"><i class="fa fa-edit"></i> Edit</a> 
+                    <a href="#" class="btn btn-danger btn-outline-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <nav class="ml-4">
+              <ul class="pagination pagination-sm">
+                <li class="page-item disabled"><a href="#" class="page-link">Prev</a></li>
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item disabled"><a href="#" class="page-link">Next</a></li> 
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

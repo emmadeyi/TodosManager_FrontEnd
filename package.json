@@ -1,0 +1,20 @@
+{
+  "name": "admin_theme_01",
+  "version": "1.0.0",
+  "description": "Admin Basic Blog Theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "warez",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
